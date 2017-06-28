@@ -1,14 +1,33 @@
-## project13
-An PHP Project library
+# TobyMaxham PHP Helpers
+A PHP packages provided with many helper functions and classes.
+I use this in many projects.
 
-### PHP.ini modification
+## Installation
 ```
-include_path=".;C:\xampp\php\PEAR;C:\project13\library"
+composer require tobymaxham/php-helpers
 ```
 
-### Composer 
-You can use Composer Autoload instead of modify php.ini.
+## Usage 
 
+### Functions
+
+`collect`
+```php
+$collection = collect(['Freddy', 'Teddy', 'Eddy']);
+
+$collection->first(); // Freddy
+$collection->last(); // Eddy
+
+foreach ($collection as $key => $value) {
+    echo $key . ' => ' . $value;
+}
+
+// 0 => Freddy
+// 1 => Teddy
+// 2 => Eddy
 ```
-composer require tobymaxham/project13
-```
+
+
+### Classes
+
+....
