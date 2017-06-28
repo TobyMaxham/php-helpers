@@ -1,0 +1,23 @@
+{
+  "name": "tobymaxham/php-helpers",
+  "description": "A PHP packages provided with many helper functions and classes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tobias Maxham",
+      "email": "git2017@maxham.de"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "TobyMaxham\\Helper\\": "src/classes"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
